@@ -79,9 +79,9 @@ async def pm_search(client, message):
         await auto_filter(client, message)
     else:
         await message.reply_text(
-            "<b><i>ɪ ᴀᴍ ɴᴏᴛ ᴡᴏʀᴋɪɴɢ ʜᴇʀᴇ. ꜱᴇᴀʀᴄʜ ᴍᴏᴠɪᴇꜱ ɪɴ ᴏᴜʀ ᴍᴏᴠɪᴇ ꜱᴇᴀʀᴄʜ ɢʀᴏᴜᴘ.</i></b>",
+            "<b><i>ɪ ᴀᴍ ɴᴏᴛ ᴡᴏʀᴋɪɴɢ ʜᴇʀᴇ. ꜱᴇᴀʀᴄʜ ᴀɴɪᴍᴇ ɪɴ ᴏᴜʀ ᴀɴɪᴍᴇ ꜱᴇᴀʀᴄʜ ɢʀᴏᴜᴘ.</i></b>",
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton("📝 ᴍᴏᴠɪᴇ ꜱᴇᴀʀᴄʜ ɢʀᴏᴜᴘ ", url=MOVIE_GROUP_LINK)]]
+                [[InlineKeyboardButton("📝 ᴀɴɪᴍᴇ ꜱᴇᴀʀᴄʜ ɢʀᴏᴜᴘ ", url=MOVIE_GROUP_LINK)]]
             ),
         )
 
@@ -1229,7 +1229,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         has_free_trial = await db.check_trial_status(user_id)
         if has_free_trial:
             await query.answer(
-                " ʏᴏᴜ'ᴠᴇ ᴀʟʀᴇᴀᴅʏ ᴄʟᴀɪᴍᴇᴅ ʏᴏᴜʀ ꜰʀᴇᴇ ᴛʀɪᴀʟ ᴏɴᴄᴇ !\n\n📌 ᴄʜᴇᴄᴋᴏᴜᴛ ᴏᴜʀ ᴘʟᴀɴꜱ ʙʏ : /plan",
+                " <b>I Lɪᴋᴇ😱 Yᴏᴜʀ Sᴍᴀʀᴛɴᴇss🧠 Bᴜᴛ Dᴏɴ'ᴛ ʙᴇ Oᴠᴇʀ Sᴍᴀʀᴛ👹</b>\n\nʏᴏᴜ'ᴠᴇ ᴀʟʀᴇᴀᴅʏ ᴄʟᴀɪᴍᴇᴅ ʏᴏᴜʀ ꜰʀᴇᴇ ᴛʀɪᴀʟ ᴏɴᴄᴇ !\n\n📌 ᴄʜᴇᴄᴋᴏᴜᴛ ᴏᴜʀ ᴘʟᴀɴꜱ ʙʏ : /plan",
                 show_alert=True,
             )
             return
@@ -1270,8 +1270,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 )
             ],
             [
-                InlineKeyboardButton("ᴡᴀᴛᴄʜ ᴏɴʟɪɴᴇ", url=online),
-                InlineKeyboardButton("ꜰᴀꜱᴛ ᴅᴏᴡɴʟᴏᴀᴅ", url=download),
+                InlineKeyboardButton("📺ᴡᴀᴛᴄʜ ᴏɴʟɪɴᴇ📺", url=online),
+                InlineKeyboardButton("🚀ꜰᴀꜱᴛ ᴅᴏᴡɴʟᴏᴀᴅ🚀", url=download),
             ],
             [InlineKeyboardButton("✗ ᴄʟᴏsᴇ ✗", callback_data="close_data")],
         ]
@@ -1284,8 +1284,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("🚀 ꜰᴀꜱᴛ ᴅᴏᴡɴʟᴏᴀᴅ", url=download),
-                        InlineKeyboardButton("ᴡᴀᴛᴄʜ ᴏɴʟɪɴᴇ 🧿", url=online),
+                        InlineKeyboardButton("🚀 ꜰᴀꜱᴛ ᴅᴏᴡɴʟᴏᴀᴅ🚀", url=download),
+                        InlineKeyboardButton("📺ᴡᴀᴛᴄʜ ᴏɴʟɪɴᴇ 📺", url=online),
                     ]
                 ]
             ),
@@ -1537,7 +1537,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [
             [
                 InlineKeyboardButton(
-                    "ʀᴇᴘᴏ", url="https://github.com/JisshuTG/Jisshu-filter-bot"
+                    "ʀᴇᴘᴏ", url="https://t.me/darkworld008"
                 )
             ],
             [
